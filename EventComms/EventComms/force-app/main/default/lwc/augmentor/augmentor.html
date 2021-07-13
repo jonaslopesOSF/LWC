@@ -1,0 +1,36 @@
+<template>
+  <lightning-card title="Augmentor" icon-name="action:download">
+    <lightning-layout>
+      <lightning-layout-item flexibility="auto" padding="around-small">
+        <lightning-input
+          label="Set Starting Counter"
+          type="number"
+          min="0"
+          max="1000000"
+          value={startCounter}
+          onchange={handleStartChange}>
+        </lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item flexibility="auto" padding="around-small" onbuttonclick={handleMaximizeCounter}>
+        <template for:each={starters} for:item="starter">
+          <c-button
+            key={starter}
+            label={starter}
+            data-starter={starter}
+            icon="utility:close">
+          </c-button>
+        </template>
+        <lightning-button 
+          class="slds-var-p-vertical_xx-small"
+          label="Add 1m To Counter"
+          data-starter=1000000
+          onclick={handleMaximizeCounter}>
+        </lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+    <c-numerator
+      class="slds-show slds-is-relative"
+      counter={startCounter}>
+    </c-numerator>
+  </lightning-card>
+</template>
