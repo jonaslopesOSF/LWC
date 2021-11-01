@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Add_Review</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Review</shortDescription>
+        <value>Add Review</value>
+    </labels>
+    <labels>
+        <fullName>Average_Reviews</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Average Reviews</shortDescription>
+        <value>Average Reviews</value>
+    </labels>
+    <labels>
+        <fullName>Average_Rating</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Average Rating: </shortDescription>
+        <value>Average Rating: </value>
+    </labels>
+    <labels>
+        <fullName>Rating</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Rating</shortDescription>
+        <value>Rating</value>
+    </labels>
+    <labels>
+        <fullName>Review_Subject</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Review Subject</shortDescription>
+        <value>Review Subject</value>
+    </labels>
+    <labels>
+        <fullName>No_Reviews_Available</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No reviews available at the moment</shortDescription>
+        <value>No reviews available at the moment</value>
+    </labels>
+    <labels>
+        <fullName>No_Product_Record_Bind</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Product record is bind</shortDescription>
+        <value>No Product record is bind</value>
+    </labels>
+    <labels>
+        <fullName>Reviews</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reviews</shortDescription>
+        <value>Reviews</value>
+    </labels>
+    <labels>
+        <fullName>Success_Title</fullName>
+        <categories>LWC Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your Review was created!</shortDescription>
+        <value>Your Review was created!</value>
+    </labels>
+</CustomLabels>

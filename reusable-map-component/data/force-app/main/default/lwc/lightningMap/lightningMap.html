@@ -1,0 +1,18 @@
+<template>
+  <lightning-card title={cardTitle} icon-name="action:map">
+    <template if:true={showMap}>
+      <lightning-map
+        map-markers={mapMarkers}
+        markers-title={title}
+        zoom-level={zoomLevel}
+      >
+      </lightning-map>
+    </template>
+
+    <template if:false={showMap}>
+      <span class="slds-align_absolute-center">
+        {errorMessage}
+      </span>
+    </template>
+  </lightning-card>
+</template>

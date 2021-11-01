@@ -1,0 +1,32 @@
+<template>
+  <template if:false={product}>
+    <!-- lightning card for the label when wiredRecord has no data goes here  -->
+    <lightning-card icon-name={detailsTabIconName}>
+      <span class="slds-align_absolute-center no-product-height">
+        {label.labelNoProductRecordIsBind}
+      </span>
+    </lightning-card>
+  </template>
+
+  <template if:true={product}>
+    <!-- lightning card for the content when wiredRecord has data goes here  -->
+    <lightning-tabset variant="scoped">
+
+      <lightning-tab label={label.labelAverageReviews}>
+          <p><lightning-formatted-text value={averageRatingText}></lightning-formatted-text></p>
+      </lightning-tab>
+
+      <lightning-tab label={label.labelReviews} value="reviews">
+        <c-product-reviews record-id={productId}></c-product-reviews>
+      </lightning-tab>
+
+      <lightning-tab label={label.labelAddReview}>
+        <c-product-add-review-form 
+          record-id={productId}
+          oncreatereview={handleReviewCreated}
+        >
+        </c-product-add-review-form>
+      </lightning-tab>
+    </lightning-tabset> 
+  </template>
+</template>
